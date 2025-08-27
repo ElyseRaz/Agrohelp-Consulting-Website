@@ -57,7 +57,7 @@ function Header() {
                         </div>
 
                         {/* Navigation Links */}
-                        <nav className='hidden md:flex space-x-6'>
+                        <nav className='custom-md:hidden space-x-6'>
                             {navigation.map((item) => {
                                 const isActive = currentHash === item.href;
                                 return (
@@ -77,7 +77,7 @@ function Header() {
                         </nav>
                         {/* Mobile menu button */}
                         <button
-                            className="md:hidden p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100"
+                            className="custom-md:flex p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -86,7 +86,7 @@ function Header() {
 
                     {/* Mobile Navigation */}
                     {isMenuOpen && (
-                        <div className="md:hidden py-4 border-t border-gray-200">
+                        <div className="custom-md:flex py-4 border-t border-gray-200">
                             <nav className="flex flex-col space-y-4">
                                 {navigation.map((item) => {
                                     const isActive = currentHash === item.href;

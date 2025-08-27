@@ -52,30 +52,30 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="py-20 bg-gray-50 scroll-mt-20"
+      className="py-12 sm:py-16 md:py-20 bg-gray-50 scroll-mt-20"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16 flex flex-col items-center"
+          className="text-center mb-10 sm:mb-12 md:mb-16 flex flex-col items-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
           <span className="flex items-center justify-center mb-2">
-            <Phone className="text-green-600 mr-2" size={36} />
-            <h2 className="text-4xl font-bold text-green-700 mb-0">Contactez-Nous</h2>
+            <Phone className="text-green-600 mr-2" size={28} />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700 mb-0">Contactez-Nous</h2>
           </span>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
             Prêt à transformer vos opérations agricoles ? Contactez nos experts aujourd'hui pour des solutions personnalisées.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Information */}
           <motion.div
             className="space-y-8"
@@ -148,16 +148,16 @@ const Contact = () => {
 
           {/* Contact Form */}
           <motion.div
-            className="bg-white rounded-xl shadow-lg p-8"
+            className="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8"
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Envoyez-nous un Message</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Envoyez-nous un Message</h3>
             <motion.form
               onSubmit={handleSubmit}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6"
               initial="hidden"
               animate="visible"
               variants={{
@@ -165,7 +165,7 @@ const Contact = () => {
                 visible: { transition: { staggerChildren: 0.1 } }
               }}
             >
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -208,7 +208,7 @@ const Contact = () => {
                 </motion.div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -277,7 +277,7 @@ const Contact = () => {
 
               <motion.button
                 type="submit"
-                className="w-full bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200 flex items-center justify-center group"
+                className="w-full bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200 flex items-center justify-center group text-base sm:text-lg"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >

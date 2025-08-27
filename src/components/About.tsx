@@ -55,33 +55,33 @@ const About = () => {
 
         {/* Titre principal */}
         <motion.div
-          className="text-center mb-16 flex flex-col items-center"
+          className="text-center mb-12 flex flex-col items-center px-2 sm:px-0"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          <span className="flex items-center justify-center mb-2">
-            <BookOpen className="text-green-600 mr-2" size={36} />
-            <h2 className="text-4xl font-bold text-green-700 mb-0">À Propos d'Agrohelp Consulting</h2>
+          <span className="flex items-center justify-center mb-2 flex-wrap">
+            <BookOpen className="text-green-600 mr-2" size={32} />
+            <h2 className="text-2xl sm:text-4xl font-bold text-green-700 mb-0">À Propos d'Agrohelp Consulting</h2>
           </span>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Avec plus de 15 ans d'expérience, nous nous consacrons à transformer les communautés rurales 
             grâce à un conseil agricole expert et des solutions de produits premium.
           </p>
         </motion.div>
 
         {/* Notre Histoire + Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           <motion.div
-            className="bg-gray-50 rounded-2xl p-8 shadow-md"
+            className="bg-gray-50 rounded-2xl p-4 sm:p-8 shadow-md"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Notre Histoire</h3>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Notre Histoire</h3>
+            <div className="space-y-3 sm:space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
               <p>
                 Fondée en 2009, Agrohelp Consulting est née d'une passion pour combler le fossé entre 
                 les pratiques agricoles traditionnelles et les innovations agricoles modernes. Notre voyage a commencé 
@@ -101,7 +101,7 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex justify-center"
+            className="relative flex justify-center mt-6 lg:mt-0"
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -110,39 +110,39 @@ const About = () => {
             <img 
               src="logo.jpg" 
               alt="Notre équipe en action"
-              className="rounded-2xl shadow-xl w-full max-w-sm object-cover"
+              className="rounded-2xl shadow-xl w-full max-w-xs sm:max-w-sm object-cover"
             />
             <motion.div
-              className="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-xl shadow-lg"
+              className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 bg-green-600 text-white p-4 sm:p-6 rounded-xl shadow-lg"
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <div className="text-2xl font-bold">15+</div>
-              <div className="text-sm">Années d'Excellence</div>
+              <div className="text-lg sm:text-2xl font-bold">15+</div>
+              <div className="text-xs sm:text-sm">Années d'Excellence</div>
             </motion.div>
           </motion.div>
         </div>
 
         {/* Nos Valeurs */}
-        <div className="bg-green-50 rounded-2xl py-12 px-6 mb-24 shadow-inner">
-          <h3 className="text-3xl font-bold text-green-700 text-center mb-10">Nos Valeurs</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+        <div className="bg-green-50 rounded-2xl py-8 sm:py-12 px-2 sm:px-6 mb-16 shadow-inner">
+          <h3 className="text-2xl sm:text-3xl font-bold text-green-700 text-center mb-6 sm:mb-10">Nos Valeurs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {values.map((value, index) => (
               <motion.div
                 key={index}
-                className="text-center bg-white rounded-xl shadow p-8 hover:shadow-lg transition"
+                className="text-center bg-white rounded-xl shadow p-6 sm:p-8 hover:shadow-lg transition"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
               >
-                <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="bg-green-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                   {value.icon}
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">{value.title}</h4>
+                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -150,31 +150,31 @@ const About = () => {
 
         {/* Équipe */}
         <div>
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Rencontrez Notre Équipe d'Experts</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-8 sm:mb-12">Rencontrez Notre Équipe d'Experts</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {team.map((member, index) => (
               <motion.div
                 key={index}
-                className="text-center group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition"
+                className="text-center group bg-white rounded-2xl shadow-lg p-6 sm:p-8 hover:shadow-2xl transition"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
               >
-                <div className="relative mb-6 flex justify-center">
+                <div className="relative mb-4 sm:mb-6 flex justify-center">
                   <motion.img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover border-4 border-green-100 group-hover:scale-105 transition-transform duration-200 shadow"
+                    className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-green-100 group-hover:scale-105 transition-transform duration-200 shadow"
                     whileHover={{ scale: 1.08 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   />
-                  <span className="absolute bottom-0 right-0 bg-green-600 text-white text-xs px-3 py-1 rounded-full shadow-md">
+                  <span className="absolute bottom-0 right-0 bg-green-600 text-white text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full shadow-md">
                     {member.experience}
                   </span>
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h4>
-                <p className="text-green-600 font-medium mb-2">{member.role}</p>
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">{member.name}</h4>
+                <p className="text-green-600 font-medium mb-1 sm:mb-2">{member.role}</p>
               </motion.div>
             ))}
           </div>

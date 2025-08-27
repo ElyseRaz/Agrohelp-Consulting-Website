@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Affiche le menu mobile à partir de 1095px */
+@media (max-width: 1095px) {
+  .custom-md\:hidden {
+    display: none !important;
+  }
+  .custom-md\:flex {
+    display: flex !important;
+  }
+}
+@media (min-width: 1096px) {
+  .custom-md\:hidden {
+    display: flex !important;
+  }
+  .custom-md\:flex {
+    display: none !important;
+  }
+}
