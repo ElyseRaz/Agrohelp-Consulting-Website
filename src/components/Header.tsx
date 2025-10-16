@@ -47,7 +47,7 @@ function Header() {
                     <div className='flex justify-between items-center py-4'>
                         {/*Logo */}
                         <div className='flex items-center space-x-3'>
-                            <img src="/public/logo.jpg"
+                            <img src="/logo.jpg"
                                 alt="Agrohelp Consulting Logo"
                                 className="h-15 w-15 object-contain" />
                             <div>

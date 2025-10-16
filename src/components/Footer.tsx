@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/public/logo.jpg" 
+                src="/logo.jpg" 
                 alt="Agrohelp Consulting Logo" 
                 className="h-10 w-10 object-contain"
               />

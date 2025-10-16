@@ -126,7 +126,7 @@ const Hero = () => {
               whileHover={{ rotate: 0, scale: 1.03 }}
             >
               <img 
-                src="/public/slogan.png" 
+                src="/slogan.png" 
                 alt="Agricultural consulting" 
                 className="w-full h-52 sm:h-64 md:h-80 object-cover rounded-lg"
               />
