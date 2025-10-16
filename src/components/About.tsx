@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Target, Eye, Heart ,BookOpen} from 'lucide-react'; // Ajout de Info
+import { Target, Eye, Heart, BookOpen, User } from 'lucide-react'; // Ajout de User
 
 const About = () => {
   const values = [
@@ -22,22 +22,19 @@ const About = () => {
 
   const team = [
     {
-      name: "Dr. Maria Santos",
-      role: "Spécialiste Agricole",
-      image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
-      experience: "15+ années en sciences des cultures"
+      name: "ANDRIATSARAFARA Sandratriniaina Ramanoelina",
+      role: "Responsable Administratif",
+      image: "",
     },
     {
       name: "RAOELINARIVO Holy Harinoro",
       role: "Fondateur & Gérante d'Agrohelp Consulting",
-      image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
-      experience: "12+ années en élevage animal"
+      image: "/holy.jpg",
     },
     {
-      name: "Ana Gutierrez",
-      role: "Coordinatrice Développement Rural",
-      image: "https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg",
-      experience: "10+ années en développement communautaire"
+      name: "RANDRIAMIARANTSOA Mariniva Eliah Brinly",
+      role: "Responsable Marketing et Commercial",
+      image: "",
     }
   ];
 
@@ -160,16 +157,19 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.1 * index }}
               >
                 <div className="relative mb-4 sm:mb-6 flex justify-center">
-                  <motion.img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-green-100 group-hover:scale-105 transition-transform duration-200 shadow"
-                    whileHover={{ scale: 1.08 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  />
-                  <span className="absolute bottom-0 right-0 bg-green-600 text-white text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full shadow-md">
-                    {member.experience}
-                  </span>
+                  {member.image ? (
+                    <motion.img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-green-100 group-hover:scale-105 transition-transform duration-200 shadow"
+                      whileHover={{ scale: 1.08 }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                    />
+                  ) : (
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-green-100 flex items-center justify-center border-4 border-green-100 shadow">
+                      <User className="text-green-600" size={48} />
+                    </div>
+                  )}
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">{member.name}</h4>
                 <p className="text-green-600 font-medium mb-1 sm:mb-2">{member.role}</p>
