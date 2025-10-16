@@ -29,7 +29,7 @@ const About = () => {
     {
       name: "RAOELINARIVO Holy Harinoro",
       role: "Fondateur & Gérante d'Agrohelp Consulting",
-      image: "/holy.jpg",
+      image: "/Holy.jpg",
     },
     {
       name: "RANDRIAMIARANTSOA Mariniva Eliah Brinly",
