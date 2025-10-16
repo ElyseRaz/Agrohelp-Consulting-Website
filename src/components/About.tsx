@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Eye, Heart, Users, Info ,BookOpen} from 'lucide-react'; // Ajout de Info
+import { Target, Eye, Heart ,BookOpen} from 'lucide-react'; // Ajout de Info
 
 const About = () => {
   const values = [

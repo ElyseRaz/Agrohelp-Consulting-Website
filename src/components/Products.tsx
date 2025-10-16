@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Package, Truck, Award, CheckCircle, ShoppingBag } from 'lucide-react'; // Ajout de ShoppingBag
 

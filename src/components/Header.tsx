@@ -1,5 +1,5 @@
-import { Menu, X, Home, Info, Briefcase, ShoppingBag, Mail, Phone, BookOpen } from 'lucide-react';
-import React, { useState, useEffect } from 'react'
+import { Menu, X, Home,  Briefcase, ShoppingBag, Phone, BookOpen } from 'lucide-react';
+import { useState, useEffect } from 'react'
 
 function Header() {
 
