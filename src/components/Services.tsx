@@ -1,39 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Users, BarChart3, Shield, Lightbulb, Globe, Briefcase } from 'lucide-react'; // Ajout de Briefcase
+import { GraduationCap, Package, BarChart3, Megaphone, Briefcase } from 'lucide-react'; // Icônes changées
 
 const Services = () => {
   const services = [
     {
-      icon: <Leaf className="text-green-600" size={32} />,
-      title: "Conseil Agricole",
-      description: "Conseils d'experts sur la gestion des cultures, la santé des sols et les pratiques agricoles durables pour maximiser votre productivité agricole."
+      icon: <GraduationCap className="text-green-600" size={32} />,
+      title: "Accompagnement et formation",
+      description: "Développement des compétences grâce à une formation pratique à l'agriculture biollogique et l'agroécologique."
     },
     {
-      icon: <Users className="text-green-600" size={32} />,
-      title: "Développement de l'Élevage",
-      description: "Solutions complètes de gestion du bétail incluant programmes de reproduction, planification nutritionnelle et systèmes de gestion sanitaire."
+      icon: <Package className="text-green-600" size={32} />,
+      title: "Production et distribution de B-NIMO",
+      description: "Approuvé pour l'agriculture biologique, il est à la fois un pesticide naturel et un engrais biologique. Il garantit des récoltes saine, améliore la fértilité des sols et contribue à des pratiques agricoles durables."
     },
     {
       icon: <BarChart3 className="text-green-600" size={32} />,
-      title: "Analyse de Marché",
-      description: "Recherche et analyse de marché approfondies pour vous aider à prendre des décisions éclairées sur la sélection des cultures et les investissements en élevage."
+      title: "Conseil en développement Agricole",
+      description: "Études techniques , développement de projets agricoles et soutien stratégique pour optimiser vos rendements."
     },
     {
-      icon: <Shield className="text-green-600" size={32} />,
-      title: "Gestion des Risques",
-      description: "Développer des stratégies pour atténuer les risques agricoles incluant météo, parasites, maladies et fluctuations du marché."
+      icon: <Megaphone className="text-green-600" size={32} />,
+      title: "Vulgarisation et animation ",
+      description: "Sensibiliser les communautés rurales et partager les meilleurs pratiques pour promouvoir une agriculture inclusive et résiliente."
     },
-    {
-      icon: <Lightbulb className="text-green-600" size={32} />,
-      title: "Solutions d'Innovation",
-      description: "Mise en œuvre de technologies agricoles modernes et techniques d'agriculture innovantes pour une efficacité améliorée."
-    },
-    {
-      icon: <Globe className="text-green-600" size={32} />,
-      title: "Développement Rural",
-      description: "Programmes complets de développement rural axés sur l'autonomisation communautaire et la croissance économique durable."
-    }
   ];
 
   return (
@@ -63,7 +53,7 @@ const Services = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
@@ -75,7 +65,7 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div 
               key={index}
-              className="bg-gray-50 rounded-xl p-4 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 group flex flex-col"
+              className="bg-gray-50 rounded-xl p-4 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 group flex flex-col w-full h-[340px]" // Largeur full, hauteur fixe
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.3 }}
@@ -90,7 +80,7 @@ const Services = () => {
                 {service.icon}
               </motion.div>
               <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{service.description}</p>
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base flex-1">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

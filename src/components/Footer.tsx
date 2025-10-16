@@ -107,21 +107,21 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="text-green-400 mt-1" size={18} />
                 <div className="text-gray-400">
-                  <p>123 Voie Agricole</p>
-                  <p>Centre de Développement Rural</p>
-                  <p>Farmville, ST 12345</p>
+                  <p>Tsiadana</p>
+                  <p>101 Antananarivo</p>
+                  <p>Madagascar</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="text-green-400" size={18} />
                 <div className="text-gray-400">
-                  <p>+1 (555) 123-4567</p>
+                  <p>+261 38 17 363 42</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-green-400" size={18} />
                 <div className="text-gray-400">
-                  <p>info@agrohelp.com</p>
+                  <p>agrohelpconsulting@gmail.com</p>
                 </div>
               </div>
             </div>

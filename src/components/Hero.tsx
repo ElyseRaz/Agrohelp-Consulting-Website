@@ -30,8 +30,8 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transformer les
-                <span className="text-green-600 block">Communautés Rurales</span>
+                Soutenir 
+                <span className="text-green-600 block">le développement du monde rural</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
                 Conseil expert et produits agricoles premium pour un développement rural durable. 
@@ -81,12 +81,12 @@ const Hero = () => {
             >
               {[{
                 icon: <Sprout className="text-green-600" size={24} />,
-                value: '500+',
-                label: 'Projets Réalisés'
+                value: '30+',
+                label: 'Formation Réalisés'
               }, {
                 icon: <Users className="text-green-600" size={24} />,
-                value: '1000+',
-                label: 'Agriculteurs Aidés'
+                value: '50+',
+                label: 'Associations Bénéficiaires'
               }, {
                 icon: <TrendingUp className="text-green-600" size={24} />,
                 value: '15+',

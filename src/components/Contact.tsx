@@ -30,22 +30,22 @@ const Contact = () => {
     {
       icon: <Phone className="text-green-600" size={24} />,
       title: "Téléphone",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"]
+      details: ["+261 32 38 067 07", "+261 38 17 363 42"]
     },
     {
       icon: <Mail className="text-green-600" size={24} />,
       title: "Email",
-      details: ["info@agrohelp.com", "support@agrohelp.com"]
+      details: ["agrohelpconsulting@gmail.com"]
     },
     {
       icon: <MapPin className="text-green-600" size={24} />,
       title: "Adresse",
-      details: ["123 Voie Agricole", "Centre de Développement Rural", "Farmville, ST 12345"]
+      details: ["Tsiadana", "101 Antananarivo", "Madagascar"]
     },
     {
       icon: <Clock className="text-green-600" size={24} />,
       title: "Heures d'Ouverture",
-      details: ["Lundi - Vendredi: 8h00 - 18h00", "Samedi: 9h00 - 16h00", "Dimanche: Fermé"]
+      details: ["Lundi - Vendredi: 8h00 - 16h00", "Samedi: 9h00 - 16h00", "Dimanche: Fermé"]
     }
   ];
 
@@ -127,7 +127,7 @@ const Contact = () => {
               <ul className="space-y-3">
                 {[
                   "15+ années d'expérience dans l'industrie",
-                  'Historique prouvé avec 500+ projets réussis',
+                  'Historique prouvé avec 30+ projets réussis',
                   "Équipe d'experts spécialistes agricoles",
                   'Support client et consultation 24/7'
                 ].map((item, idx) => (
@@ -225,7 +225,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    placeholder="(555) 123-4567"
+                    placeholder="+261 xx xx xxx xx"
                   />
                 </motion.div>
                 <motion.div

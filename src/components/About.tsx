@@ -29,8 +29,8 @@ const About = () => {
       experience: "15+ années en sciences des cultures"
     },
     {
-      name: "Carlos Rodriguez",
-      role: "Expert en Élevage",
+      name: "RAOELINARIVO Holy Harinoro",
+      role: "Fondateur & Gérante d'Agrohelp Consulting",
       image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
       experience: "12+ années en élevage animal"
     },
@@ -83,10 +83,9 @@ const About = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Notre Histoire</h3>
             <div className="space-y-3 sm:space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
               <p>
-                Fondée en 2009, Agrohelp Consulting est née d'une passion pour combler le fossé entre 
-                les pratiques agricoles traditionnelles et les innovations agricoles modernes. Notre voyage a commencé 
-                avec une mission simple : autonomiser les communautés rurales avec les connaissances et outils 
-                nécessaires pour un succès agricole durable.
+                AGROHELP CONSULTING est une entreprise pionnière dans le secteur agricole, spéciaisée dans la promotion des pratiques agroécologiques et biologiques. 
+                Grâce à une expertise éprouvée et à un engangement fort en faveur du développement durable,
+                nous accompagnons les agriculteurs , les entreprises et les institutions dans leur transition vers une agriculture plus respectueuse de l'environnement.
               </p>
               <p>
                 Au fil des années, nous avons évolué d'une petite firme de conseil à un fournisseur complet 
@@ -101,7 +100,7 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex justify-center mt-6 lg:mt-0"
+            className="relative flex justify-center mt-6 lg:mt-0" 
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
